@@ -8,4 +8,4 @@
 ## Challenges FrontEnd
 | Repo| Description | Youtube Turorial or link to the challenge |
 |:---|:---|:---|
-| [Word Association Game](https://github.com/Bryan-Herrera-DEV/desafios_y_mas/tree/main/word-association-game) | Word association game | [Youtube Tutorial](https://www.youtube.com/watch?v=I8BRAgMrxXM&t) |
+| [Word Association Game](https://github.com/Bryan-Herrera-DEV/desafios_y_mas/tree/main/word-association-game) | Word association game | [Youtube Tutorial](https://www.youtube.com/watch?v=dvckHkyV2kQ&t) |
