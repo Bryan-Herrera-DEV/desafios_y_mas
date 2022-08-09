@@ -1,0 +1,384 @@
+:root {
+    --yellow: #ffde15;
+    --orange: #fcb040;
+    --coffe: #592819;
+    --gray: #857b6f;
+    --red: #c4161b;
+    --yellow2: #feea87;
+    --coffe2: #ceab85;
+    --cp1: polygon(0 0, 0% 100%, 6% 100%);
+    --cp2: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    --cp3: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+    --cp4: polygon(0 0, 100% 0%, 100% 95%, 0 75%);
+    --cp5: polygon(50% 0%, 15% 100%, 85% 100%);
+    --cp6: polygon(0 0, 0 100%, 100% 100%);
+    --cp7: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    --cp8: polygon(30% 11%, 100% 0, 95% 75%, 0 100%);
+    --cp9: polygon(50% 0%, 0% 100%, 100% 100%);
+    --cp10: polygon(12% 10%, 100% 0, 100% 100%, 44% 85%);
+    --cp11: polygon(35% 10%, 100% 0%, 74% 89%, 0% 100%);
+    --cp12: polygon(35% 10%, 100% 0%, 70% 80%, 0% 100%);
+    --cp13: polygon(0 0, 100% 6%, 100% 74%, 0 100%);
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 550px;
+    height: 630px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.redLine1 {
+    background-color: var(--red);
+    width: 25px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 220px;
+}
+
+.redLine2 {
+    background-color: var(--red);
+    width: 180px;
+    height: 180px;
+    clip-path: var(--cp1);
+    transform: rotate(-25deg);
+    position: absolute;
+    bottom: 25px;
+    left: 417px;
+}
+
+.blackLine1 {
+    background-color: #000;
+    width: 120px;
+    height: 35px;
+    clip-path: var(--cp2);
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(-25deg);
+    position: absolute;
+    bottom: 90px;
+    left: 180px;
+}
+
+.blackLine2 {
+    background-color: #000;
+    width: 160px;
+    height: 33px;
+    clip-path: var(--cp2);
+    transform: matrix(1, 0, 0, 1, 0, 0) rotate(-38deg);
+    position: absolute;
+    bottom: 110px;
+    left: 260px;
+}
+
+.coffe1 {
+    background-color: var(--coffe);
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 240px;
+    left: 293px;
+    clip-path: var(--cp3);
+}
+
+.coffe1Side {
+    background-color: var(--orange);
+    width: 40px;
+    height: 200px;
+    position: absolute;
+    top: 240px;
+    left: 393px;
+}
+
+.coffe1Side-white {
+    background-color: #fff;
+    width: 40px;
+    height: 210px;
+    position: absolute;
+    top: 235px;
+    left: 412px;
+    transform: rotate(-10deg);
+}
+
+.coffe1Side2 {
+    background-color: var(--orange);
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    transform: rotate(-35deg);
+    top: 190px;
+    left: 300px;
+    z-index: -1;
+}
+
+.rightArm {
+    background-color: var(--yellow);
+    width: 60px;
+    height: 190px;
+    position: absolute;
+    top: 31px;
+    left: 282px;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.rightArm>.orange1 {
+    background-color: var(--orange);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 80px;
+    left: -20px;
+    z-index: -1;
+}
+
+.coffe1Side2-white {
+    background-color: #fff;
+    width: 70px;
+    height: 110px;
+    position: absolute;
+    top: 147px;
+    left: 357px;
+    transform: rotate(-65deg);
+}
+
+.coffe2 {
+    background-color: var(--coffe);
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 192px;
+    left: 260px;
+    transform: rotate(45deg);
+    z-index: -3;
+}
+
+.bodyOne {
+    background-color: var(--orange);
+    width: 95px;
+    height: 210px;
+    clip-path: var(--cp4);
+    position: absolute;
+    top: 295px;
+    left: 170px;
+    overflow: hidden;
+}
+
+.bodyOne>.shadow {
+    background-color: var(--yellow2);
+    width: 120px;
+    height: 200px;
+    transform: rotate(32deg);
+    position: absolute;
+    top: -47px;
+    left: -64px;
+    z-index: -1;
+}
+
+.bodyOne>.lineBox {
+    background-color: transparent;
+    width: 60px;
+    height: 150px;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+
+.bodyOne>.lineBox>.line {
+    background-color: var(--yellow);
+    width: 70px;
+    height: 20px;
+    margin: 10px;
+    clip-path: var(--cp2);
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(-25deg);
+}
+
+.gray {
+    background-color: var(--gray);
+    width: 70px;
+    height: 120px;
+    clip-path: var(--cp5);
+    transform: matrix(1, 0, 0, -1, 0, 0) rotate(25deg);
+    position: absolute;
+    top: 270px;
+    left: 255px;
+    z-index: -1;
+}
+
+.orangeTriangle {
+    background-color: var(--orange);
+    width: 75px;
+    height: 130px;
+    clip-path: var(--cp6);
+    position: absolute;
+    top: 229px;
+    left: 155px;
+    transform: rotate(121deg);
+}
+
+.leftArm {
+    background-color: var(--orange);
+    width: 74px;
+    height: 220px;
+    position: absolute;
+    clip-path: var(--cp7);
+    top: 293px;
+    left: 100px;
+    overflow: hidden;
+}
+
+.leftArm>.shadow {
+    background-color: var(--yellow);
+    width: 80px;
+    height: 250px;
+    transform: rotate(-160deg);
+    position: absolute;
+    top: -19px;
+    left: -45px;
+
+}
+
+.coffe3 {
+    background-color: var(--coffe);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 345px;
+    left: 130px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.chin1 {
+    background-color: var(--coffe2);
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 150px;
+    left: 225px;
+    clip-path: var(--cp5);
+    transform: rotate(60deg);
+
+}
+
+.chin2 {
+    background-color: var(--coffe2);
+    width: 25px;
+    height: 60px;
+    position: absolute;
+    top: 152px;
+    left: 182px;
+    clip-path: var(--cp8);
+    transform: matrix(1, 0, 0, 1, 0, 0) rotate(110deg);
+}
+
+.hair1 {
+    background-color: #000;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 135px;
+    left: 110px;
+    clip-path: var(--cp9);
+    transform: matrix(1, 0, 0, -1, 0, 0) rotate(-45deg);
+}
+
+.hair2 {
+    background-color: rgb(26, 25, 25);
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    top: 106px;
+    left: 63px;
+    clip-path: var(--cp9);
+    transform: rotate(-67deg);
+}
+
+.hair3 {
+    background-color: rgb(59, 58, 58);
+    width: 74px;
+    height: 25px;
+    position: absolute;
+    top: 144px;
+    left: 59px;
+    clip-path: var(--cp9);
+    transform: rotate(-103deg);
+}
+
+.hair4 {
+    background-color: rgb(26, 25, 25);
+    width: 40px;
+    height: 75px;
+    position: absolute;
+    top: 160px;
+    left: 125px;
+    clip-path: var(--cp10);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.eyeBrow {
+    background-color: rgb(26, 25, 25);
+    width: 8px;
+    height: 25px;
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    clip-path: var(--cp11);
+    transform: rotate(25deg) matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.eye {
+    background-color: rgb(26, 25, 25);
+    clip-path: var(--cp1);
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    top: 125px;
+    left: 188px;
+    transform: matrix(1, 0, 0, -1, 0, 0) rotate(-20deg);
+}
+
+.mustache {
+    background-color: rgb(26, 25, 25);
+    width: 18px;
+    height: 42px;
+    position: absolute;
+    top: 110px;
+    left: 220px;
+    clip-path: var(--cp12);
+    transform: rotate(35deg) matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.nose {
+    background-color: rgb(26, 25, 25);
+    clip-path: var(--cp1);
+    position: absolute;
+    width: 90px;
+    height: 15px;
+    top: 115px;
+    left: 220px;
+    transform: matrix(1, 0, 0, -1, 0, 0) rotate(-20deg);
+}
+
+.mouth {
+    background-color: rgb(26, 25, 25);
+    width: 15px;
+    height: 30px;
+    position: absolute;
+    top: 125px;
+    left: 235px;
+    clip-path: var(--cp13);
+    transform: rotate(40deg)
+}
